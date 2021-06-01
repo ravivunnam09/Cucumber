@@ -31,7 +31,7 @@ public class StepDefinition extends BaseClass {
 	@Given("User launch {string} Browser")
 	public void user_launch_browser(String browserName) throws IOException {
 
-		logger.info("Launching Browser is : " + browserName);
+		logger.info("Launching Browser is : " + configProp.getProperty("browserName"));
 		Browser.setUp(configProp.getProperty("browserName"));
 	}
 
