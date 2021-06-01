@@ -12,5 +12,4 @@ Feature: Create Account
       |  | browserName |  | applicationURL         |  |
       |  | chrome      |  | https://www.amazon.in/ |  |
       |  | ie          |  | http://automationpractice.com/index.php |  |
-      |  | ie          |  | https://www.flipkart.com/ |  |
      
