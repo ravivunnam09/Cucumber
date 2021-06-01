@@ -18,7 +18,7 @@ public class StepDefinition extends BaseClass {
 
 	//Testing
 	@Before
-	public void setUp() throws IOException {
+	public void configSetUp() throws IOException {
 		FileInputStream fis = new FileInputStream("config.properties");
 		configProp = new Properties();
 		configProp.load(fis);
