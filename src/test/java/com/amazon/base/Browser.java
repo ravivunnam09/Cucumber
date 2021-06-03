@@ -9,12 +9,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Browser {
-	
-	public static WebDriver driver;
-	
-	public static WebDriver setUp(String browserName) {
+public class Browser extends BaseClass{
 
+
+	public WebDriver setUp(String browserName) {
+		logger.info("Launching " + configProp.getProperty("browserName")+ " Browser");
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
@@ -29,18 +28,20 @@ public class Browser {
 
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(90, TimeUnit.SECONDS);
 		return driver;
 
 	}
-	public static void launchApplication(String url) {
+	public void launchApplication(String url) {
 		driver.get(url);
+		logger.info("Entered URL : " + url);
 	}
-	
-	public static void tearDown(){
+
+	public void tearDown(){
 		driver.quit();
+		logger.info("Closing Browser");
 	}
-	
+
 
 }

@@ -7,33 +7,23 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.amazon.utilities.Action;
 
-public class HomePage {
-	
+public class ResultsPage {
 	private WebDriver driver;
 	
-	public HomePage(WebDriver driver){
+	@FindBy(xpath = "//span[normalize-space()='1-24 of over 60,000 results']")
+	WebElement results;
+	public ResultsPage(WebDriver driver){
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		
 	}
-	
-	@FindBy(xpath = "//input[@id='twotabsearchtextbox']") 	
-	WebElement search_TextBox;
-	@FindBy(xpath="//div[@id='nav-xshop']//a[contains(@class,'')][normalize-space()='Mobiles']")
-	WebElement mobileLink;
-	
-	
 	public String getPageTitle(){
 		String pageTitle = driver.getTitle();
 		return pageTitle;
 	}
-	public void setSearchBoxValue(String inputValue){
-		Action.textBox(search_TextBox, inputValue);
-	}
 	
-	public void clickOnMobileLink(){
-		Action.clickOn(mobileLink);
+	public void getResults(){
+		Action.getText(results);
 	}
-	
 
 }

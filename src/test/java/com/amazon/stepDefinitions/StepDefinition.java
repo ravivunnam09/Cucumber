@@ -9,37 +9,34 @@ import org.apache.log4j.PropertyConfigurator;
 import com.amazon.base.BaseClass;
 import com.amazon.base.Browser;
 import com.amazon.pageobjects.HomePage;
+//import com.amazon.pageobjects.MobilesPage;
+import com.amazon.pageobjects.MobilesPage;
+import com.amazon.pageobjects.ResultsPage;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 
 public class StepDefinition extends BaseClass {
-	public Properties configProp;
-	public Logger logger;
-	public HomePage homePage;
 
 	@Before
 	public void configSetUp() throws IOException {
 		FileInputStream fis = new FileInputStream("config.properties");
 		configProp = new Properties();
 		configProp.load(fis);
-
-		logger = Logger.getLogger("*********Cucumber Project*********");
+		logger = Logger.getLogger("");
 		PropertyConfigurator.configure("log4j.properties");
+		browser = new Browser();
 
 	}
 
 	@Given("User launch {string} Browser")
 	public void user_launch_browser(String browserName) throws IOException {
-
-		logger.info("Launching Browser is : " + configProp.getProperty("browserName"));
-		driver = Browser.setUp(configProp.getProperty("browserName"));
+		driver = browser.setUp(configProp.getProperty("browserName"));
 	}
 
 	@Given("User open URL {string}")
 	public void user_open_url(String url) {
-		logger.info("Launching URL is : " + url);
-		Browser.launchApplication(url);
+		browser.launchApplication(url);
 	}
 
 	@Then("Page Title should be {string}")
@@ -54,14 +51,43 @@ public class StepDefinition extends BaseClass {
 	@Then("User search the product {string}")
 	public void user_search_the_product(String inputValue) {
 		homePage = new HomePage(driver);
-		homePage.setValueInSearchBox(inputValue);
-		logger.info("Value Entered in Search Box is : "+inputValue);
+		homePage.setSearchBoxValue(inputValue);
 	}
 
 	@Then("Close browser")
 	public void close_browser() {
-		logger.info("Closing Browser");
-		Browser.tearDown();
+		browser.tearDown();
+	}
+	
+	@Then("User navigate to HomePage")
+	public void user_navigate_to_home_page() {
+		homePage = new HomePage(driver);
+	    String pageTitile = homePage.getPageTitle();
+	    logger.info("Page Title is : "+pageTitile);
+	}
+
+	@When("User clicks on Moblies link")
+	public void user_clicks_on_moblies_link() {
+		homePage.clickOnMobileLink();
+	}
+
+	@Then("System navigates to Mobiles page")
+	public void system_navigates_to_mobiles_page() {
+		mobilesPage = new MobilesPage(driver);
+		String  pageTitle = mobilesPage.getPageTitle();
+		logger.info("Page Title is : "+pageTitle);
+	}
+
+	@Then("click on Made for Amazon")
+	public void click_on_made_for_amazon() {
+		mobilesPage.clickOnMadeForAmazon();
+	}
+
+	@Then("System navigates to list of Items page")
+	public void system_navigates_to_list_of_items_page() {
+		resultsPage = new ResultsPage(driver);
+		String  pageTitle = resultsPage.getPageTitle();
+		logger.info("Page Title is : "+pageTitle);
 	}
 
 }

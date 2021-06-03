@@ -9,23 +9,25 @@ import com.amazon.base.BaseClass;
 public class Action extends BaseClass {
 	static Select select;
 	
-	//TextBox method
 	public static void textBox(WebElement element, String inputValue){
-		Assert.assertEquals(true, element.isDisplayed());
-		element.click();
-		Assert.assertEquals(true, element.isEnabled());
+		clickOn(element);
 		element.clear();
 		element.sendKeys(inputValue);
-		logger.info("Entered value is "+inputValue);
+		logger.info("Entered Textbox Value is : "+inputValue);
 		
 	}
 	
-	//Click method
 	public static void clickOn(WebElement element){
+		Assert.assertEquals(true, element.isDisplayed());
 		element.click();
+		logger.info("Clicked on Element");
 	}
 	
-	//Dropdown method
+	public static String getText(WebElement element){
+		logger.info("Value is : "+element.getText());
+		return element.getText();
+	}
+	
 	public static void selectDropdownValue(WebElement element, String inputValue){
 		select = new Select(element);
 		select.selectByValue(inputValue);
