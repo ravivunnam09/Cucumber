@@ -4,7 +4,9 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class Action {
+import com.amazon.base.BaseClass;
+
+public class Action extends BaseClass {
 	static Select select;
 	
 	//TextBox method
@@ -12,7 +14,10 @@ public class Action {
 		Assert.assertEquals(true, element.isDisplayed());
 		element.click();
 		Assert.assertEquals(true, element.isEnabled());
+		element.clear();
 		element.sendKeys(inputValue);
+		logger.info("Entered value is "+inputValue);
+		
 	}
 	
 	//Click method

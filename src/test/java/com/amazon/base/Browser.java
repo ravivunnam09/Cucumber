@@ -13,7 +13,7 @@ public class Browser {
 	
 	public static WebDriver driver;
 	
-	public static void setUp(String browserName) {
+	public static WebDriver setUp(String browserName) {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -29,8 +29,9 @@ public class Browser {
 
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(90, TimeUnit.SECONDS);
+		return driver;
 
 	}
 	public static void launchApplication(String url) {

@@ -6,10 +6,11 @@ Feature: Create Account
   @smoke
   Scenario Outline: : Create Amazon Account with Invalid data
     And User open URL "<applicationURL>"
+    Then User search the product "<product>"
     And Close browser
 
     Examples: 
-      |  | browserName |  | applicationURL         |  |
-      |  | chrome      |  | https://www.amazon.in/ |  |
-      |  | ie          |  | http://automationpractice.com/index.php |  |
+      |  | browserName |  | applicationURL         |  | product || 
+      |  | chrome      |  | https://www.amazon.in/ |  | mobiles ||
+     #|  | ie          |  | http://automationpractice.com/index.php |  |
      
