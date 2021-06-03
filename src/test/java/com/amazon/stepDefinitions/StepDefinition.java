@@ -53,6 +53,7 @@ public class StepDefinition extends BaseClass {
 	
 	@Then("User search the product {string}")
 	public void user_search_the_product(String inputValue) {
+		homePage = new HomePage(driver);
 		homePage.setValueInSearchBox(inputValue);
 		logger.info("Value Entered in Search Box is : "+inputValue);
 	}
