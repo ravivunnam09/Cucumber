@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 				tags={"~@smoke","~@regression","@sanity"},
 				plugin={"pretty","html:target/cucumber-reports", "json:target/cucumber.json"}
 				
-)
+				)
 public class TestRunner {
 
 }

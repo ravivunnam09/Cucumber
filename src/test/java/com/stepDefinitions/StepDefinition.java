@@ -2,10 +2,11 @@ package com.stepDefinitions;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Map;
 import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.testng.Assert;
+import org.junit.Assert;
 
 import com.base.BaseClass;
 import com.pageObjects.HomePage;
@@ -13,6 +14,7 @@ import com.pageObjects.MobilesPage;
 import com.pageObjects.ResultsPage;
 import com.utils.Browser;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.*;
 import cucumber.api.java.en.*;
 
@@ -96,7 +98,22 @@ public class StepDefinition extends BaseClass {
 	@Then("^verify the page title \"([^\"]*)\"$")
 	public void verify_the_page_title(String expectedTitle) throws Throwable {
 		String actualTitle=driver.getTitle();
-		Assert.assertEquals(actualTitle, expectedTitle);
+		Assert.assertEquals(expectedTitle,actualTitle);
+	}
+	
+	@Given("^User open URL$")
+	public void user_open_URL(DataTable applicationURL) throws Throwable {
+		for(Map<String, String> data : applicationURL.asMaps(String.class, String.class)){
+			browser.launchApplication(data.get("applicationURL"));
+		}
+		
+	}
+
+	@Then("^User search the product$")
+	public void user_search_the_product(DataTable products) throws Throwable {
+		for(Map<String,String> inputValue : products.asMaps(String.class, String.class)){
+		homePage.setSearchBoxValue(inputValue.get("products"));
+		}
 	}
 
 }

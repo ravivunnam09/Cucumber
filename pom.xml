@@ -43,8 +43,6 @@
 			<version>1.6.4</version>
 		</dependency>
 
-
-
 		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-jvm-deps -->
 		<dependency>
 			<groupId>info.cukes</groupId>

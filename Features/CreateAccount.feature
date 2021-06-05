@@ -29,7 +29,7 @@ Feature: Create Account
       |  | browserName |  | applicationURL         |  |
       |  | chrome      |  | https://www.amazon.in/ |  |
 
-  @sanity
+  @smoke
   Scenario Outline: : Validate Automation Practice Page Title
     And User open URL "<applicationURL>"
     Then verify the page title "<pageTitle>"
@@ -37,3 +37,13 @@ Feature: Create Account
     Examples: 
       |  | browserName |  | applicationURL                          |  | pageTitle |  |
       |  | ie          |  | http://automationpractice.com/index.php |  | My Store  |  |
+
+  @sanity
+  Scenario: Searching Products in Amazon
+    And User open URL
+      | applicationURL         |
+      | https://www.amazon.in/ |
+    Then verify the page title
+    Then User search the product
+      | products       |
+      | Iphone |

@@ -4,3 +4,32 @@
 2021-06-05 13:54:04,463 -  -INFO - Launching chrome Browser
 2021-06-05 13:54:15,239 -  -INFO - Entered URL : http://automationpractice.com/index.php
 2021-06-05 13:54:15,978 -  -INFO - Closing Browser
+2021-06-05 14:02:51,962 -  -INFO - Launching chrome Browser
+2021-06-05 14:03:06,071 -  -INFO - Entered URL : http://automationpractice.com/index.php
+2021-06-05 14:03:06,772 -  -INFO - Closing Browser
+2021-06-05 14:04:14,515 -  -INFO - Launching chrome Browser
+2021-06-05 14:04:27,028 -  -INFO - Entered URL : http://automationpractice.com/index.php
+2021-06-05 14:04:27,742 -  -INFO - Closing Browser
+2021-06-05 14:05:34,822 -  -INFO - Launching chrome Browser
+2021-06-05 14:05:46,019 -  -INFO - Entered URL : http://automationpractice.com/index.php
+2021-06-05 14:05:46,785 -  -INFO - Closing Browser
+2021-06-05 14:07:56,408 -  -INFO - Launching chrome Browser
+2021-06-05 14:08:06,414 -  -INFO - Entered URL : http://automationpractice.com/index.php
+2021-06-05 14:08:07,314 -  -INFO - Closing Browser
+2021-06-05 22:36:03,526 -  -INFO - Launching chrome Browser
+2021-06-05 22:36:14,178 -  -INFO - Entered URL : https://www.amazon.in/
+2021-06-05 22:36:14,344 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+2021-06-05 22:36:14,705 -  -INFO - Clicked on Element
+2021-06-05 22:36:15,962 -  -INFO - Closing Browser
+2021-06-05 22:37:12,688 -  -INFO - Launching chrome Browser
+2021-06-05 22:37:21,490 -  -INFO - Entered URL : https://www.amazon.in/
+2021-06-05 22:37:21,609 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+2021-06-05 22:37:21,905 -  -INFO - Clicked on Element
+2021-06-05 22:37:22,046 -  -INFO - Entered Textbox Value is : Iphone
+2021-06-05 22:37:22,853 -  -INFO - Closing Browser
+2021-06-05 22:38:44,697 -  -INFO - Launching chrome Browser
+2021-06-05 22:38:53,523 -  -INFO - Entered URL : https://www.amazon.in/
+2021-06-05 22:38:53,667 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+2021-06-05 22:38:53,920 -  -INFO - Clicked on Element
+2021-06-05 22:38:54,060 -  -INFO - Entered Textbox Value is : Iphone
+2021-06-05 22:38:57,810 -  -INFO - Closing Browser
