@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 				glue={"com.stepDefinitions"},
 				dryRun=false,
 				monochrome=true,
-				tags={"~@smoke","~@regression","@sanity"},
+				tags={"@smoke","~@regression","~@sanity"},
 				plugin={"pretty","html:target/cucumber-reports", "json:target/cucumber.json"}
 				
 				)

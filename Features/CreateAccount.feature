@@ -13,7 +13,7 @@ Feature: Create Account
       |  | browserName |  | applicationURL         |  | productName    |  |
       |  | chrome      |  | https://www.amazon.in/ |  | Iphone mobiles |  |
 
-  @regression
+  @smoke
   Scenario Outline: : Verify option for mobiles having Made for Amazon
     And User open URL "<applicationURL>"
     Then User navigate to HomePage
@@ -38,7 +38,7 @@ Feature: Create Account
       |  | browserName |  | applicationURL                          |  | pageTitle |  |
       |  | ie          |  | http://automationpractice.com/index.php |  | My Store  |  |
 
-  @sanity
+  @smoke
   Scenario: Searching Products in Amazon
     And User open URL
       | applicationURL         |

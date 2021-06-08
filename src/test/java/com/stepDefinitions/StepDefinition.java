@@ -9,9 +9,7 @@ import org.apache.log4j.PropertyConfigurator;
 import org.junit.Assert;
 
 import com.base.BaseClass;
-import com.pageObjects.HomePage;
-import com.pageObjects.MobilesPage;
-import com.pageObjects.ResultsPage;
+import com.manager.PageObjectManager;
 import com.utils.Browser;
 
 import cucumber.api.DataTable;
@@ -38,6 +36,7 @@ public class StepDefinition extends BaseClass {
 	@Given("^User launch \"([^\"]*)\" Browser$")
 	public void user_launch_browser(String browserName) throws IOException {
 		driver = browser.setUp(configProp.getProperty("browserName"));
+		pageObjectManager = new PageObjectManager(driver);
 	}
 
 	@Given("^User open URL \"([^\"]*)\"$")
@@ -47,7 +46,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^verify the page title$")
 	public void verify_the_page_title() throws Throwable {
-		homePage = new HomePage(driver);
+		homePage = pageObjectManager.getHomePage();
 		String pageTitle = homePage.getPageTitle();
 		logger.info(pageTitle);
 	}
@@ -55,7 +54,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^User search the product \"([^\"]*)\"$")
 	public void user_search_the_product(String inputValue) {
-		homePage = new HomePage(driver);
+		homePage = pageObjectManager.getHomePage();
 		homePage.setSearchBoxValue(inputValue);
 	}
 
@@ -67,7 +66,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("User navigate to HomePage")
 	public void user_navigate_to_home_page() {
-		homePage = new HomePage(driver);
+		homePage = pageObjectManager.getHomePage();
 		String pageTitile = homePage.getPageTitle();
 		logger.info("Page Title is : "+pageTitile);
 	}
@@ -79,7 +78,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("System navigates to Mobiles page")
 	public void system_navigates_to_mobiles_page() {
-		mobilesPage = new MobilesPage(driver);
+		mobilesPage = pageObjectManager.getMobilesPage();
 		String  pageTitle = mobilesPage.getPageTitle();
 		logger.info("Page Title is : "+pageTitle);
 	}
@@ -91,7 +90,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("System navigates to list of Items page")
 	public void system_navigates_to_list_of_items_page() {
-		resultsPage = new ResultsPage(driver);
+		resultsPage = pageObjectManager.getResultsPage();
 		String  pageTitle = resultsPage.getPageTitle();
 		logger.info("Page Title is : "+pageTitle);
 	}
