@@ -13,18 +13,18 @@ public class Action extends BaseClass {
 		clickOn(element);
 		element.clear();
 		element.sendKeys(inputValue);
-		logger.info("Entered Textbox Value is : "+inputValue);
+		log.info("Entered Textbox Value is : "+inputValue);
 		
 	}
 	
 	public static void clickOn(WebElement element){
 		Assert.assertEquals(true, element.isDisplayed());
 		element.click();
-		logger.info("Clicked on Element");
+		log.info("Clicked on Element");
 	}
 	
 	public static String getText(WebElement element){
-		logger.info("Value is : "+element.getText());
+		log.info("Value is : "+element.getText());
 		return element.getText();
 	}
 	

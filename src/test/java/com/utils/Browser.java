@@ -15,7 +15,7 @@ public class Browser extends BaseClass{
 
 
 	public WebDriver setUp(String browserName) {
-		logger.info("Launching " + configProp.getProperty("browserName")+ " Browser");
+		log.info("Launching " + configProp.getProperty("browserName")+ " Browser");
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
@@ -37,12 +37,13 @@ public class Browser extends BaseClass{
 	}
 	public void launchApplication(String url) {
 		driver.get(url);
-		logger.info("Entered URL : " + url);
+		log.info("Entered URL : " + url);
 	}
 
 	public void tearDown(){
+		driver.close();
 		driver.quit();
-		logger.info("Closing Browser");
+		log.info("Closing Browser");
 	}
 
 

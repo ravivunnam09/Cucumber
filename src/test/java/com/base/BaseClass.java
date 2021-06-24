@@ -15,7 +15,7 @@ public class BaseClass {
 	
 	public WebDriver driver;
 	public Browser browser;
-	public static Logger logger;
+	public static Logger log;
 	public static Properties configProp;
 	public PageObjectManager pageObjectManager;
 	public HomePage homePage;

@@ -17,10 +17,17 @@ public class HomePage {
 		
 	}
 	
-	@FindBy(xpath = "//input[@id='twotabsearchtextbox']") 	
+	@FindBy(xpath = "//input[@id='twotabsearchtextbox']")
 	WebElement search_TextBox;
+	
 	@FindBy(xpath="//div[@id='nav-xshop']//a[contains(@class,'')][normalize-space()='Mobiles']")
 	WebElement mobileLink;
+	
+	@FindBy(xpath="//span[contains(@class,'hm-icon-label')]") 
+	WebElement allMenuButton;
+	
+	@FindBy(xpath="//a[contains(text(),'Mobiles')]")
+	WebElement mobilesLink;
 	
 	
 	public String getPageTitle(){
@@ -33,6 +40,10 @@ public class HomePage {
 	
 	public void clickOnMobileLink(){
 		Action.clickOn(mobileLink);
+	}
+	
+	public void clickOnAllMenu(){
+		Action.clickOn(allMenuButton);
 	}
 	
 

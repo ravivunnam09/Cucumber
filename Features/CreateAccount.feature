@@ -3,18 +3,18 @@ Feature: Create Account
   Background: 
     Given User launch "<browserName>" Browser
 
-  @smoke
-  Scenario Outline: : Create Amazon Account with Invalid data
+  @regression
+  Scenario Outline: : TS_001 Search the given product in amazon
     And User open URL "<applicationURL>"
     Then verify the page title
     Then User search the product "<productName>"
 
     Examples: 
-      |  | browserName |  | applicationURL         |  | productName    |  |
-      |  | chrome      |  | https://www.amazon.in/ |  | Iphone mobiles |  |
+      |  | browserName |  | applicationURL         |  | productName  |  |
+      |  | chrome      |  | https://www.amazon.in/ |  | ipads latest |  |
 
-  @smoke
-  Scenario Outline: : Verify option for mobiles having Made for Amazon
+  @regression
+  Scenario Outline: : TS_002 Verify option for mobiles having Made for Amazon
     And User open URL "<applicationURL>"
     Then User navigate to HomePage
     When User clicks on Moblies link
@@ -29,8 +29,8 @@ Feature: Create Account
       |  | browserName |  | applicationURL         |  |
       |  | chrome      |  | https://www.amazon.in/ |  |
 
-  @smoke
-  Scenario Outline: : Validate Automation Practice Page Title
+  @sanity
+  Scenario Outline: : TS_003 Validate Automation Practice Page Title
     And User open URL "<applicationURL>"
     Then verify the page title "<pageTitle>"
 
@@ -38,12 +38,20 @@ Feature: Create Account
       |  | browserName |  | applicationURL                          |  | pageTitle |  |
       |  | ie          |  | http://automationpractice.com/index.php |  | My Store  |  |
 
-  @smoke
-  Scenario: Searching Products in Amazon
+  @sanity
+  Scenario: TS_004 Searching Products in Amazon
     And User open URL
       | applicationURL         |
       | https://www.amazon.in/ |
     Then verify the page title
     Then User search the product
-      | products       |
-      | Iphone |
+      | products |
+      | Iphone   |
+
+  @smoke
+  Scenario Outline: TS_005 Validate All Menu option is enabled
+    And User open URL "<applicationURL>"
+    Then verify the All Menu option
+     Examples: 
+      |  | browserName |  | applicationURL         |
+      |  | chrome      |  | https://www.amazon.in/ |

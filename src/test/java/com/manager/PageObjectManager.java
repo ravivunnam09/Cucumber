@@ -12,6 +12,7 @@ public class PageObjectManager {
 	private HomePage homePage;
 	private MobilesPage mobilesPage;
 	private ResultsPage resultsPage;
+	
 
 	public PageObjectManager(WebDriver driver){
 		this.driver = driver;
@@ -23,7 +24,7 @@ public class PageObjectManager {
 	}
 	
 	public MobilesPage getMobilesPage(){
-		return (mobilesPage == null ) ? mobilesPage = new MobilesPage(driver):mobilesPage;
+		return (mobilesPage == null ) ? mobilesPage = new MobilesPage(driver): mobilesPage;
 		
 	}
 	public ResultsPage getResultsPage(){

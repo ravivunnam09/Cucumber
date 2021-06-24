@@ -1,91 +1,53 @@
-2021-06-05 13:53:05,042 -  -INFO - Launching chrome Browser
-2021-06-05 13:53:16,189 -  -INFO - Entered URL : http://automationpractice.com/index.php
-2021-06-05 13:53:16,941 -  -INFO - Closing Browser
-2021-06-05 13:54:04,463 -  -INFO - Launching chrome Browser
-2021-06-05 13:54:15,239 -  -INFO - Entered URL : http://automationpractice.com/index.php
-2021-06-05 13:54:15,978 -  -INFO - Closing Browser
-2021-06-05 14:02:51,962 -  -INFO - Launching chrome Browser
-2021-06-05 14:03:06,071 -  -INFO - Entered URL : http://automationpractice.com/index.php
-2021-06-05 14:03:06,772 -  -INFO - Closing Browser
-2021-06-05 14:04:14,515 -  -INFO - Launching chrome Browser
-2021-06-05 14:04:27,028 -  -INFO - Entered URL : http://automationpractice.com/index.php
-2021-06-05 14:04:27,742 -  -INFO - Closing Browser
-2021-06-05 14:05:34,822 -  -INFO - Launching chrome Browser
-2021-06-05 14:05:46,019 -  -INFO - Entered URL : http://automationpractice.com/index.php
-2021-06-05 14:05:46,785 -  -INFO - Closing Browser
-2021-06-05 14:07:56,408 -  -INFO - Launching chrome Browser
-2021-06-05 14:08:06,414 -  -INFO - Entered URL : http://automationpractice.com/index.php
-2021-06-05 14:08:07,314 -  -INFO - Closing Browser
-2021-06-05 22:36:03,526 -  -INFO - Launching chrome Browser
-2021-06-05 22:36:14,178 -  -INFO - Entered URL : https://www.amazon.in/
-2021-06-05 22:36:14,344 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
-2021-06-05 22:36:14,705 -  -INFO - Clicked on Element
-2021-06-05 22:36:15,962 -  -INFO - Closing Browser
-2021-06-05 22:37:12,688 -  -INFO - Launching chrome Browser
-2021-06-05 22:37:21,490 -  -INFO - Entered URL : https://www.amazon.in/
-2021-06-05 22:37:21,609 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
-2021-06-05 22:37:21,905 -  -INFO - Clicked on Element
-2021-06-05 22:37:22,046 -  -INFO - Entered Textbox Value is : Iphone
-2021-06-05 22:37:22,853 -  -INFO - Closing Browser
-2021-06-05 22:38:44,697 -  -INFO - Launching chrome Browser
-2021-06-05 22:38:53,523 -  -INFO - Entered URL : https://www.amazon.in/
-2021-06-05 22:38:53,667 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
-2021-06-05 22:38:53,920 -  -INFO - Clicked on Element
-2021-06-05 22:38:54,060 -  -INFO - Entered Textbox Value is : Iphone
-2021-06-05 22:38:57,810 -  -INFO - Closing Browser
-2021-06-08 23:11:49,981 -  -INFO - Launching chrome Browser
-2021-06-08 23:12:07,180 -  -INFO - Entered URL : https://www.amazon.in/
-2021-06-08 23:12:07,270 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
-2021-06-08 23:12:07,719 -  -INFO - Clicked on Element
-2021-06-08 23:12:08,046 -  -INFO - Entered Textbox Value is : Iphone
-2021-06-08 23:12:08,836 -  -INFO - Closing Browser
-2021-06-08 23:14:25,980 -  -INFO - Launching chrome Browser
-2021-06-08 23:14:34,221 -  -INFO - Entered URL : https://www.amazon.in/
-2021-06-08 23:14:34,304 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
-2021-06-08 23:14:34,664 -  -INFO - Clicked on Element
-2021-06-08 23:14:34,910 -  -INFO - Entered Textbox Value is : Iphone mobiles
-2021-06-08 23:14:35,744 -  -INFO - Closing Browser
-2021-06-08 23:14:35,758 -  -INFO - Launching chrome Browser
-2021-06-08 23:14:43,713 -  -INFO - Entered URL : https://www.amazon.in/
-2021-06-08 23:14:43,764 -  -INFO - Page Title is : Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
-2021-06-08 23:14:46,221 -  -INFO - Clicked on Element
-2021-06-08 23:14:46,253 -  -INFO - Page Title is : Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in
-2021-06-08 23:14:50,252 -  -INFO - Clicked on Element
-2021-06-08 23:14:50,264 -  -INFO - Page Title is : Amazon.in
-2021-06-08 23:14:53,454 -  -INFO - Clicked on Element
-2021-06-08 23:14:53,540 -  -INFO - Page Title is : Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in
-2021-06-08 23:14:54,831 -  -INFO - Closing Browser
-2021-06-08 23:14:54,842 -  -INFO - Launching chrome Browser
-2021-06-08 23:15:11,615 -  -INFO - Entered URL : http://automationpractice.com/index.php
-2021-06-08 23:15:12,370 -  -INFO - Closing Browser
-2021-06-08 23:15:12,376 -  -INFO - Launching chrome Browser
-2021-06-08 23:15:21,209 -  -INFO - Entered URL : https://www.amazon.in/
-2021-06-08 23:15:21,400 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
-2021-06-08 23:15:21,795 -  -INFO - Clicked on Element
-2021-06-08 23:15:21,980 -  -INFO - Entered Textbox Value is : Iphone
-2021-06-08 23:15:22,787 -  -INFO - Closing Browser
-2021-06-08 23:17:17,816 -  -INFO - Launching chrome Browser
-2021-06-08 23:17:26,245 -  -INFO - Entered URL : https://www.amazon.in/
-2021-06-08 23:17:26,345 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
-2021-06-08 23:17:26,751 -  -INFO - Clicked on Element
-2021-06-08 23:17:27,004 -  -INFO - Entered Textbox Value is : Iphone mobiles
-2021-06-08 23:17:28,021 -  -INFO - Closing Browser
-2021-06-08 23:17:28,038 -  -INFO - Launching chrome Browser
-2021-06-08 23:17:34,951 -  -INFO - Entered URL : https://www.amazon.in/
-2021-06-08 23:17:35,662 -  -INFO - Page Title is : Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
-2021-06-08 23:17:42,133 -  -INFO - Clicked on Element
-2021-06-08 23:17:42,186 -  -INFO - Page Title is : Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in
-2021-06-08 23:17:44,317 -  -INFO - Clicked on Element
-2021-06-08 23:17:44,334 -  -INFO - Page Title is : Amazon.in
-2021-06-08 23:17:45,908 -  -INFO - Clicked on Element
-2021-06-08 23:17:45,964 -  -INFO - Page Title is : Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in
-2021-06-08 23:17:46,888 -  -INFO - Closing Browser
-2021-06-08 23:17:46,899 -  -INFO - Launching chrome Browser
-2021-06-08 23:18:07,318 -  -INFO - Entered URL : http://automationpractice.com/index.php
-2021-06-08 23:18:08,192 -  -INFO - Closing Browser
-2021-06-08 23:18:08,199 -  -INFO - Launching chrome Browser
-2021-06-08 23:18:16,147 -  -INFO - Entered URL : https://www.amazon.in/
-2021-06-08 23:18:16,374 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
-2021-06-08 23:18:16,588 -  -INFO - Clicked on Element
-2021-06-08 23:18:16,788 -  -INFO - Entered Textbox Value is : Iphone
-2021-06-08 23:18:17,974 -  -INFO - Closing Browser
+2021-06-24 12:08:54,348 -  -INFO - Launching chrome Browser
+2021-06-24 12:09:03,263 -  -INFO - Entered URL : https://www.amazon.in/
+2021-06-24 12:09:03,469 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+2021-06-24 12:09:03,737 -  -INFO - Clicked on Element
+2021-06-24 12:09:03,949 -  -INFO - Entered Textbox Value is : ipads latest
+2021-06-24 12:09:03,950 -  -INFO - : TS_001 Search the given product in amazon is Passed
+2021-06-24 12:09:05,493 -  -INFO - Closing Browser
+2021-06-24 12:09:05,497 -  -INFO - Launching chrome Browser
+2021-06-24 12:09:15,266 -  -INFO - Entered URL : https://www.amazon.in/
+2021-06-24 12:09:15,297 -  -INFO - Page Title is : Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+2021-06-24 12:09:18,943 -  -INFO - Clicked on Element
+2021-06-24 12:09:18,949 -  -INFO - Page Title is : Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in
+2021-06-24 12:09:22,976 -  -INFO - Clicked on Element
+2021-06-24 12:09:22,986 -  -INFO - Page Title is : Amazon.in
+2021-06-24 12:09:25,246 -  -INFO - Clicked on Element
+2021-06-24 12:09:25,273 -  -INFO - Page Title is : Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in
+2021-06-24 12:09:25,274 -  -INFO - : TS_002 Verify option for mobiles having Made for Amazon is Passed
+2021-06-24 12:09:30,426 -  -INFO - Closing Browser
+2021-06-24 12:09:30,430 -  -INFO - Launching chrome Browser
+2021-06-24 12:09:51,066 -  -INFO - Entered URL : http://automationpractice.com/index.php
+2021-06-24 12:09:51,076 -  -INFO - : TS_003 Validate Automation Practice Page Title is Passed
+2021-06-24 12:09:52,601 -  -INFO - Closing Browser
+2021-06-24 12:09:52,604 -  -INFO - Launching chrome Browser
+2021-06-24 12:10:01,027 -  -INFO - Entered URL : https://www.amazon.in/
+2021-06-24 12:10:01,051 -  -INFO - Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+2021-06-24 12:10:01,242 -  -INFO - Clicked on Element
+2021-06-24 12:10:01,539 -  -INFO - Entered Textbox Value is : Iphone
+2021-06-24 12:10:01,540 -  -INFO - TS_004 Searching Products in Amazon is Passed
+2021-06-24 12:10:06,747 -  -INFO - Closing Browser
+2021-06-24 12:10:06,749 -  -INFO - Launching chrome Browser
+2021-06-24 12:10:09,339 -  -INFO - TS_005 Validate All Menu option is enabledis Failed
+2021-06-24 12:10:10,306 -  -INFO - Closing Browser
+2021-06-24 12:12:56,279 -  -INFO - Launching chrome Browser
+2021-06-24 12:13:00,669 -  -INFO - TS_005 Validate All Menu option is enabledis Failed
+2021-06-24 12:13:01,742 -  -INFO - Closing Browser
+2021-06-24 12:14:29,933 -  -INFO - Launching chrome Browser
+2021-06-24 12:14:42,454 -  -INFO - Entered URL : https://www.amazon.in/
+2021-06-24 12:14:42,470 -  -INFO - TS_005 Validate All Menu option is enabledis Failed
+2021-06-24 12:14:47,656 -  -INFO - Closing Browser
+2021-06-24 12:16:02,088 -  -INFO - Launching chrome Browser
+2021-06-24 12:16:12,817 -  -INFO - Entered URL : https://www.amazon.in/
+2021-06-24 12:16:12,831 -  -INFO - TS_005 Validate All Menu option is enabledis Failed
+2021-06-24 12:16:18,368 -  -INFO - Closing Browser
+2021-06-24 12:18:28,877 -  -INFO - Launching chrome Browser
+2021-06-24 12:18:41,216 -  -INFO - Entered URL : https://www.amazon.in/
+2021-06-24 12:18:43,727 -  -INFO - Clicked on Element
+2021-06-24 12:18:43,728 -  -INFO - TS_005 Validate All Menu option is enabled is Passed
+2021-06-24 12:18:48,996 -  -INFO - Closing Browser
+2021-06-24 12:51:44,089 -  -INFO - Launching chrome Browser
+2021-06-24 12:52:02,422 -  -INFO - Entered URL : https://www.amazon.in/
+2021-06-24 12:52:04,987 -  -INFO - Clicked on Element
+2021-06-24 12:52:04,990 -  -INFO - TS_005 Validate All Menu option is enabled is Passed
+2021-06-24 12:52:10,122 -  -INFO - Closing Browser

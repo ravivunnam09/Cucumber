@@ -4,15 +4,21 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Map;
 import java.util.Properties;
+
+import org.apache.commons.logging.Log;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.junit.Assert;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriverException;
 
 import com.base.BaseClass;
 import com.manager.PageObjectManager;
 import com.utils.Browser;
 
 import cucumber.api.DataTable;
+import cucumber.api.Scenario;
 import cucumber.api.java.*;
 import cucumber.api.java.en.*;
 
@@ -23,13 +29,26 @@ public class StepDefinition extends BaseClass {
 		FileInputStream fis = new FileInputStream("config.properties");
 		configProp = new Properties();
 		configProp.load(fis);
-		logger = Logger.getLogger("");
+		log = Logger.getLogger("");
 		PropertyConfigurator.configure("log4j.properties");
 		browser = new Browser();
 	}
 
 	@After
-	public void tearDown(){
+	public void tearDown(Scenario scenario){
+		if(scenario.isFailed()){
+			try {
+				log.info(scenario.getName() + "is Failed");
+				final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+				scenario.embed(screenshot, "image/png");
+			} catch (WebDriverException e) {
+				e.printStackTrace();
+			}
+
+		} else{
+			log.info(scenario.getName() + " is Passed");
+			scenario.embed(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES), "image/png");
+		}
 		browser.tearDown();
 	}
 
@@ -48,7 +67,7 @@ public class StepDefinition extends BaseClass {
 	public void verify_the_page_title() throws Throwable {
 		homePage = pageObjectManager.getHomePage();
 		String pageTitle = homePage.getPageTitle();
-		logger.info(pageTitle);
+		log.info(pageTitle);
 	}
 
 
@@ -68,7 +87,7 @@ public class StepDefinition extends BaseClass {
 	public void user_navigate_to_home_page() {
 		homePage = pageObjectManager.getHomePage();
 		String pageTitile = homePage.getPageTitle();
-		logger.info("Page Title is : "+pageTitile);
+		log.info("Page Title is : "+pageTitile);
 	}
 
 	@When("User clicks on Moblies link")
@@ -80,7 +99,7 @@ public class StepDefinition extends BaseClass {
 	public void system_navigates_to_mobiles_page() {
 		mobilesPage = pageObjectManager.getMobilesPage();
 		String  pageTitle = mobilesPage.getPageTitle();
-		logger.info("Page Title is : "+pageTitle);
+		log.info("Page Title is : "+pageTitle);
 	}
 
 	@Then("click on Made for Amazon")
@@ -92,7 +111,7 @@ public class StepDefinition extends BaseClass {
 	public void system_navigates_to_list_of_items_page() {
 		resultsPage = pageObjectManager.getResultsPage();
 		String  pageTitle = resultsPage.getPageTitle();
-		logger.info("Page Title is : "+pageTitle);
+		log.info("Page Title is : "+pageTitle);
 	}
 	@Then("^verify the page title \"([^\"]*)\"$")
 	public void verify_the_page_title(String expectedTitle) throws Throwable {
@@ -113,6 +132,12 @@ public class StepDefinition extends BaseClass {
 		for(Map<String,String> inputValue : products.asMaps(String.class, String.class)){
 		homePage.setSearchBoxValue(inputValue.get("products"));
 		}
+	}
+	
+	@Then("^verify the All Menu option$")
+	public void verify_the_All_Menu_option() throws Throwable {
+		homePage = pageObjectManager.getHomePage();
+		homePage.clickOnAllMenu();
 	}
 
 }
